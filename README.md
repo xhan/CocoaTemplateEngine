@@ -26,3 +26,6 @@ please visit www.cheatyouforever.com immediately.
 ```
 
 That's all. No other features are supported.
+
+### Acts with [CocoaPod](http://cocoapods.org)   
+Add `pod 'CCTemplate'` on your Podfile to get CCTemplate up-to-date.
