@@ -10,6 +10,7 @@
 		7169035717B264EC00F2F951 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7169035617B264EC00F2F951 /* Foundation.framework */; };
 		7169035A17B264EC00F2F951 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7169035917B264EC00F2F951 /* main.m */; };
 		7169035E17B264EC00F2F951 /* CocoaTemplateEngineDemo.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7169035D17B264EC00F2F951 /* CocoaTemplateEngineDemo.1 */; };
+		7169036517B2658300F2F951 /* CCTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7169036417B2658300F2F951 /* CCTemplate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		7169035917B264EC00F2F951 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7169035C17B264EC00F2F951 /* CocoaTemplateEngineDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaTemplateEngineDemo-Prefix.pch"; sourceTree = "<group>"; };
 		7169035D17B264EC00F2F951 /* CocoaTemplateEngineDemo.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CocoaTemplateEngineDemo.1; sourceTree = "<group>"; };
+		7169036317B2658300F2F951 /* CCTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTemplate.h; sourceTree = "<group>"; };
+		7169036417B2658300F2F951 /* CCTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTemplate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 		7169036217B2650A00F2F951 /* CocoaTemplateEngine */ = {
 			isa = PBXGroup;
 			children = (
+				7169036317B2658300F2F951 /* CCTemplate.h */,
+				7169036417B2658300F2F951 /* CCTemplate.m */,
 			);
 			path = CocoaTemplateEngine;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7169035A17B264EC00F2F951 /* main.m in Sources */,
+				7169036517B2658300F2F951 /* CCTemplate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

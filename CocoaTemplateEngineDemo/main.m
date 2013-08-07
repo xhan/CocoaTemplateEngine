@@ -7,14 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CCTemplate.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        CCTemplate* engine = [[CCTemplate alloc] init];
+//        NSString*template  = @"hello world {{name}} , {{ symbol  }} bye bye {{}}";
+        NSString*template  = @"hello world {{name}} ,  symbol  }} bye bye {{}}";
+//        NSString*template  = @"a {{} a}}  bye bye ";
+        NSDictionary* dict = @{@"name":@"xhan", @"symbol":@"!"  };
+        NSString*result = [engine scan:template dict:dict];
+        NSLog(@"> %@",result);
         
     }
     return 0;
