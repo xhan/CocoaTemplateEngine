@@ -2,6 +2,8 @@ CCTemplate
 ----------
 A lightweight Template Engine for Objective-C (with ARC feature required).
 
+[![Build Status](https://travis-ci.org/xhan/CocoaTemplateEngine.png?branch=master)](https://travis-ci.org/xhan/CocoaTemplateEngine)
+
 Template ->
 ```
 hello {{ name }},
