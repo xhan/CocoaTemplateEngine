@@ -68,9 +68,9 @@
 
 @implementation NSString (CCTemplate)
 
-- (NSString*)scan:(NSString*)string dict:(NSDictionary*)dict
+- (NSString*)templateFromDict:(NSDictionary*)dict
 {
-    return [[[CCTemplate alloc] init] scan:string dict:dict];
+    return [[[CCTemplate alloc] init] scan:self dict:dict];
 }
 
 @end

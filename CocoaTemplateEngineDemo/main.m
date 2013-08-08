@@ -14,12 +14,12 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        CCTemplate* engine = [[CCTemplate alloc] init];
-
-        NSString*template  = @"hello world {{name}} ,  symbol  }} bye bye {{}}";
-
-        NSDictionary* dict = @{@"name":@"xhan", @"symbol":@"!"  };
-        NSString*result = [engine scan:template dict:dict];
+        CCTemplate* engine    = [[CCTemplate alloc] init];
+        NSString*   template  = @"hello world {{name}}";
+        id    		dict      = @{@"name":@"xhan"};
+        NSString*result    = [engine scan:template dict:dict];
+        // or just call nsstring category method
+        result 			   = [template templateFromDict:dict];
         
         NSLog(@"> %@",result);
         

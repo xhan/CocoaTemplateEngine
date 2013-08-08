@@ -32,5 +32,5 @@
 
 
 @interface NSString (CCTemplate)
-- (NSString*)scan:(NSString*)string dict:(NSDictionary*)dict;
+- (NSString*)templateFromDict:(NSDictionary*)dict;
 @end
