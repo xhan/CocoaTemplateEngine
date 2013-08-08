@@ -21,8 +21,8 @@
 
 @interface CCTemplate : NSObject
 
-@property NSString* head; // {{ by default
-@property NSString* tail; // }} by default
+@property(copy,nonatomic) NSString* head; // {{ by default
+@property(copy,nonatomic) NSString* tail; // }} by default
 
 - (NSString*)scan:(NSString*)string dict:(NSDictionary*)dict;
 
