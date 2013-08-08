@@ -31,3 +31,15 @@ That's all. No other features are supported.
 
 ### Acts with [CocoaPod](http://cocoapods.org)   
 Add `pod 'CCTemplate'` on your Podfile to get CCTemplate up-to-date.
+
+### usage  
+
+``` objective-c  
+#import "CCTemplate.h"
+CCTemplate* engine    = [[CCTemplate alloc] init];
+NSString*   template  = @"hello world {{name}}";
+id    		dict      = @{@"name":@"xhan"};
+NSString*result    = [engine scan:template dict:dict];
+// or just call nsstring category method
+result 			   = [template templateFromDict:dict];
+```
