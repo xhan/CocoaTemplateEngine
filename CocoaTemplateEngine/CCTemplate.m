@@ -8,6 +8,10 @@
 
 #import "CCTemplate.h"
 
+#if !__has_feature(objc_arc)
+#error "enable ARC by add -fobjc-arc"
+#endif
+
 @implementation CCTemplate
 
 - (id)init
