@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CCTemplate"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "lightweight template engine for objective-c."
   s.homepage     = "https://github.com/xhan/CocoaTemplateEngine"
 
