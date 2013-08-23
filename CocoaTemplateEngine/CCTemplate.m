@@ -32,8 +32,9 @@
     [scanner setCharactersToBeSkipped:nil]; //not to ignore any chars
     
     // found head
-    while ([scanner scanUpToString:self.head intoString:&scanedStr]) {
-        [buffer appendString:scanedStr];
+    while ([scanner scanUpToString:self.head intoString:&scanedStr] || (scanedStr.length == 0)) {
+        if (scanedStr != nil)
+            [buffer appendString:scanedStr];
         if( scanner.isAtEnd ) break;
         
         //step over head-flag
@@ -64,7 +65,7 @@
         }
         
     }
-    return [NSString stringWithString:buffer];    
+    return [NSString stringWithString:buffer];
 }
 
 @end
