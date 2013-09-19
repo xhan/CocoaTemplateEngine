@@ -64,5 +64,12 @@
     [self doBaseTest];
 }
 
+- (void)testTemplateStartsAtBegining
+{
+    self.template = @"{{name}} bye bye!";
+    self.dict = @{@"name":@"xhan"};
+    self.expects = @"xhan bye bye!";
+    [self doBaseTest];
+}
 
 @end
