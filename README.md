@@ -43,3 +43,7 @@ NSString*result    = [engine scan:template dict:dict];
 // or just call nsstring category method
 result 			   = [template templateFromDict:dict];
 ```
+
+Contributors
+------------
+@gearoidoceallaigh 
