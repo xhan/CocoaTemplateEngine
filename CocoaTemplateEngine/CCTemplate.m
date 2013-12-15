@@ -64,6 +64,9 @@
             
         }
         
+        // [scanner scanUpToString:intoString:] will not clear intoString itself
+        scanedStr = @"";
+        
     }
     return [NSString stringWithString:buffer];
 }
